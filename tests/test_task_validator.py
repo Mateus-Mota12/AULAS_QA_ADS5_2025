@@ -6,7 +6,7 @@ from src.task_validator import validate_task
 # Cenário 1: Teste de sucesso com uma tarefa perfeitamente válida
 def test_validate_task_com_dados_validos():
     """Verifica se a validação retorna True para uma tarefa válida."""
-    tarefa_valida = {"titulo": "  Aprender Pytest  ", "prioridade": "al"}
+    tarefa_valida = {"titulo": "  Aprender Pytest  ", "prioridade": "alta"}
     assert validate_task(tarefa_valida) is True
 
 # Cenário 2: Teste de falha quando o título está faltando
